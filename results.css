@@ -1,0 +1,128 @@
+div.sfc_results table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.sfc_results table thead th {
+    text-transform: uppercase;
+    font-size: small;
+    background-color: silver;
+}
+
+div.sfc_results table tr.sfc_incident {
+    line-height: 16px;
+}
+
+div.sfc_results table tr.sfc_incident td {
+    font-size: small;
+    border: none;
+    color: #666666;
+}
+
+div.sfc_results table tr.sfc_comment td {
+    text-align: center;
+}
+
+div.sfc_results table tr th,
+div.sfc_results table tr td {
+    text-align: left;
+    padding: 2px 5px;
+}
+
+div.sfc_results table tr th.sfc_team,
+div.sfc_results table tr td.sfc_team {
+    width: 50%;
+}
+
+div.sfc_results table tr th.sfc_home,
+div.sfc_results table tr td.sfc_home {
+    text-align: right;
+}
+
+div.sfc_results table tr th.sfc_homeScore,
+div.sfc_results table tr th.sfc_vs,
+div.sfc_results table tr th.sfc_awayScore,
+div.sfc_results table tr td.sfc_homeScore,
+div.sfc_results table tr td.sfc_vs,
+div.sfc_results table tr td.sfc_awayScore {
+    text-align: center;
+    white-space: nowrap;
+}
+
+div.sfc_results table tr th.sfc_highlight,
+div.sfc_results table tr td.sfc_highlight {
+    font-weight: bold;
+}
+
+div.sfc_results table tr th.sfc_badge,
+div.sfc_results table tr td.sfc_badge {
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    line-height: 25px;
+}
+
+div.sfc_results table tr th.sfc_badge.sfc_home,
+div.sfc_results table tr td.sfc_badge.sfc_home {
+    background-position: center right;
+    padding-right: 25px !important;
+}
+
+div.sfc_results table tr th.sfc_badge.sfc_away,
+div.sfc_results table tr td.sfc_badge.sfc_away {
+    background-position: center left;
+    padding-left: 25px !important;
+}
+
+div.sfc_results table tr th.sfc_goal,
+div.sfc_results table tr td.sfc_goal {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAQAAAD+3TOXAAACYklEQVRIx+2WS0hUcRTGj0LjFMGEEkkLo1o5PpKCJDOcsEBoo0Rboc2g7VxECwehh4sSi5jBQiURcZwcChI3iRVSUWSbIiJM8xFkGTnjg6CH59fijtP/LufOtAj8/pt7zuL74Dy+c0U28P8gV3zSKGEJS6P4JDez5MXHg+UzwvrbzfmZY0Epzgx5TmGgI7ZIFWK8Nl5zM1YSkJx06T01g6/4zpCeo5ptCEIB13jLqI7wiNpB8aRD766JfmSB2/oJgEnaOKFzWJhnWO9TFxW3Y/6y5gliDOoyfxHSteT3b9rwIgGH9C5vU7yPdo1jokO/GlEvgixJkSOB7NAWhJPY0auTRjRqNf2Gs7mfE4Ry1mwCXTpsRO/YhCBzTvbCJ2rNzKpBeE/zyeOKWrkVunQngqj4UhfwWxPvIswUPwC4ru7EHhziIY+5pE94Rh4uPP7UBQYsqnpGtFuvarc2qLlqmwnpEgAR6inrT5l/R3gPwgEWEwM5xWHbLhewkijbMgOUpi5Q5B+iQseN+kdsAnXJ/Dy3KHFQIt+YjmnMEIiz1+ZG63hDu2510OTcy7MfGFdzRFsMgafJ7APOzjqy78rQZ4bUVOhRP610EKGHYMIyvhCmOuTMK7yd8XHeJ+lfEFRzIyL6iztUcCouXoduVNj8nNN6gZf8ZJ6LNtODdj2CIGQ3p2HXVdHtCC4OUqvTNvpVjlrdSMeuRcQjUaupWQRtAk3r9J60T6YEJCYIbu7yjSUWmCDKLiQmGTiZiaMvwayZSkKE6aOTVs5M78/Y0U/uRb5vX0Npf0l/cYM7478tG/iX+AOoXZD4g41IuAAAAABJRU5ErkJggg==);
+}
+
+div.sfc_results table tr th.sfc_goal.sfc_home,
+div.sfc_results table tr td.sfc_goal.sfc_home {
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 25px;
+    background-size: 24px 16px;
+}
+
+div.sfc_results table tr th.sfc_goal.sfc_away,
+div.sfc_results table tr td.sfc_goal.sfc_away {
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 25px;
+    background-size: 24px 16px;
+}
+
+div.sfc_results table tr th span,
+div.sfc_results table tr td span {
+    color: silver;
+}
+
+div.sfc_results table tr th span.sfc_status,
+div.sfc_results table tr td span.sfc_status {
+    font-weight: normal;
+    float: left;
+}
+
+div.sfc_results table tr th span.sfc_competition,
+div.sfc_results table tr td span.sfc_competition {
+    font-weight: normal;
+    float: right;
+}
+
+div.sfc_results div.sfc_footer {
+    display: block !important;
+    opacity: 1 !important;
+    text-align: right;
+    visibility: visible !important;
+}
+
+@media screen and (max-width: 767px) {
+    div.sfc_results {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
